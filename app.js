@@ -25,7 +25,7 @@ function displayContent(items) {
         const title = item.fields.title;
         const author = item.fields.author;
         const content = item.fields.content;
-        const image = item.fields.image;
+        const image = item.fields.asset.image.url;
         const tag   =  item.fields.tagss;
         const date = item.fields.date;
 
