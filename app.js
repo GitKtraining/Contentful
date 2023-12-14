@@ -23,14 +23,13 @@ function displayContent(items) {
 
     items.forEach(item => {
         const title = item.fields.title;
-        const author = item.fields.author;
-        const content = item.fields.content;
-        const image = item.fields.image;
-        const tag   =  item.fields.tagss;
-        const date = item.fields.date;
-
+        const author = item.fields.body;
+        const content = item.fields.date;
+        const image = item.fields.author;
+        const tag   =  item.fields.category;
+        
         const entryDiv = document.createElement('div');
-        entryDiv.innerHTML = `<h2>${title}</h2><b>${author}</b><p>${content}</p><img src="${image}" alt="${title}"><p>${tag}</p><p>${date}</p>`;
+        entryDiv.innerHTML = `<h2>${title}</h2><b>${author}</b><p>${content}</p><p>${image}</p><p>${tag}</p><p>${date}</p>`;
         contentContainer.appendChild(entryDiv);
     });
 }
