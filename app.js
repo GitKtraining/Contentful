@@ -25,8 +25,8 @@ function displayContent(items) {
         const title = item.fields.title;
         const content = item.fields.body;
         const date = item.fields.date;
-        const author = item.fields.author[0];
-        const category   =  item.fields.category[0];
+        const author = item.fields.author[];
+        const category   =  item.fields.category[];
         
         const entryDiv = document.createElement('div');
         entryDiv.innerHTML = `<h1>${title}</h1><p>${content}</p><p>${date}</p><h2>${author}</h2><p>${category}</p>`;
